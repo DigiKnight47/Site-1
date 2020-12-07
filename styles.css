@@ -58,9 +58,11 @@
 
 /* main menu(all available items display effects and properties) */
 
-.hovereffect img, .hovereffect, .hovereffect .overlay, .hovereffect a.info{
-  width: 300px;
-  height: 450px;
+.hovereffect img, .hovereffect .overlay, .hovereffect a.info{
+  max-width: 320px;
+  max-height: 470px;
+  width: 100%;
+  height:100%;
 }
 
 .hovereffect {
@@ -89,6 +91,7 @@
 .hovereffect img {
   display: block;
   position: relative;
+  height: auto;
 }
 
 .hovereffect h2 {
@@ -99,18 +102,18 @@
   font-size: 17px;
   padding: 10px;
   background: rgba(0, 0, 0, 0.6);
-  -webkit-transform: translateY(45px);
-  -ms-transform: translateY(45px);
-  transform: translateY(45px);
-  -webkit-transition: all 0.4s ease-in-out;
+  -webkit-transform: translateY(200px);
+  -ms-transform: translateY(200px);
+  transform: translateY(200px);
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.4s ease-in-out;
   opacity: 1;
 }
 
 .hovereffect:hover h2 {
-  -webkit-transform: translateY(5px);
-  -ms-transform: translateY(5px);
-  transform: translateY(5px);
+  -webkit-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  transform: translateY(50px);
   opacity: 0;
 }
 
