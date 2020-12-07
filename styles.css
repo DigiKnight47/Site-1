@@ -1,3 +1,8 @@
+body {
+  background-color: #DDDEE0;
+  text-align: center;
+  font-family: "Raleway";
+}
 /* search bar image field */
 .bar{
   display: none;
@@ -7,31 +12,6 @@
   animation-name: fade_in;
   animation-duration: 0.5s;
 }
-
-/* banner styling */
-.banner{
-  position: relative;
-}
-.banner-img{
-  width: 100%;
-}
-
-/* banner icons */
-.fas{
-  position: absolute;
-  color: white;
-  top: 2rem;
-  font-size: 1.3rem;
-}
-
-.fa-search{
-  right: 5rem;
-}
-
-.fa-shopping-cart{
-  right: 2rem;
-}
-
 /* styles after click on search button */
 .change::after {
     content: "";
@@ -55,6 +35,94 @@
   overflow: hidden;
 }
 
+/* HEADER */
+header {
+  height: 400px;
+}
+
+/* banner styling */
+.banner{
+  position: relative;
+}
+
+.banner-img{
+  width: 100%;
+}
+
+/* banner icons */
+.custom-icon{
+  position: absolute;
+  color: white;
+  top: 2rem;
+  font-size: 1.3rem;
+}
+
+/* Navigation Bar */
+.navbar {
+  border-bottom: 5px solid #04c2c9;
+  height: auto;
+}
+
+.nav-item {
+  padding: 0 18px;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  transition: 0.5s;
+  color: #04c2c9 !important;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.nav-link {
+  font-size: 15px;
+}
+
+/* SEARCH BOX */
+.searchbar {
+  height: 40px;
+  background-color: #353b48;
+  border-radius: 30px;
+  border: 0.2px solid #8f9aa7;
+}
+
+.search_input {
+  color: #8f9aa7;
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 0;
+  line-height: 40px;
+  transition: width 0.4s linear;
+}
+
+.searchbar:hover>.search_input {
+  padding: 0 10px!important;
+  width: 300px;
+  transition: width 0.2s linear;
+}
+
+.searchbar:hover>.search_icon {
+  color: #04c2c9;
+}
+
+.search_icon {
+  height: 40px;
+  width: 40px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #8f9aa7;
+  text-decoration: none;
+}
+
+#apparel{
+  background-color: #DDDEE0;
+  /* padding: 0 10% 0 10%; */
+}
 
 /* main menu(all available items display effects and properties) */
 
@@ -146,4 +214,131 @@
 
 .hovereffect a.info:hover {
   box-shadow: 0 0 5px #fff;
+}
+
+
+/* ABOUT */
+#about {
+  background-color: #fff;
+  padding: 0 10% 0 10%;
+}
+
+.title {
+  padding-top: 20px;
+  font-family: "Raleway";
+  font-size: 30pt;
+  display: block;
+}
+
+.title-bar {
+  width: 100px;
+  height: 3px;
+  background-color: #444649;
+  display: block;
+  margin: 0 auto 50px auto;
+}
+
+.para-2 {
+  font-size: 18px;
+  display: block;
+  text-align: center;
+  font-weight: 500;
+}
+
+.para-3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ACACAC;
+}
+
+.about-col {
+  padding: 15px 40px;
+  text-align: justify;
+}
+
+/* SVG */
+#svg1 {
+  background-color: #FFFFFF;
+}
+
+/* CONTACT US*/
+.form-div {
+  height: 315px;
+}
+
+.question-text {
+  text-align: center;
+  font-size: 17px;
+}
+
+.form-control {
+  width: 400px;
+  margin: 10px auto 0 auto;
+  background-color: #1b242f;
+}
+
+.submit-button {
+  text-align: center;
+  background-color: #1b242f;
+  margin: 10px auto auto 320px;
+  color: #fff;
+  padding: 9px 15px 9px 15px;
+  font-size: 16px;
+  border: 2px solid #fff;
+  transition: all 0.5s;
+  line-height: 20px;
+}
+
+.top-taker-button {
+  position: relative;
+  background-color: #343A40;
+  width: 40px;
+  height: 40px;
+  top: 20px;
+  margin: auto;
+  padding-top: 5px;
+  content: "\F4C5";
+  color: #8f9aa7;
+  font-size: 25px;
+  border-radius: 50%;
+}
+
+.top-taker-button:hover {
+  transition: 0.3s;
+  background-color: #04c2c9;
+}
+
+/* FOOTER */
+.social-section {
+  background-color: #343A40;
+  height: 110px;
+  padding-top: 30px;
+}
+
+.social-icon {
+  color: #8f9aa7;
+  padding: 8px 30px 0 30px;
+  font-size: 25px;
+}
+
+.social-icon:hover {
+  transition: 0.3s;
+  color: #04c2c9;
+}
+
+.copyright-line {
+  margin-top: 20px;
+  color: #8f9aa7;
+  font-size: 13px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+a.copyright-line:hover {
+  transition: 0.3s;
+  color: #04c2c9;
+}
+
+.Copyright {
+  color: #04c2c9;
 }

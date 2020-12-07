@@ -3,95 +3,239 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
-  <script src="https://kit.fontawesome.com/0affdc5742.js" crossorigin="anonymous"></script>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Textile</title>
+
+  <!-- CSS Style Sheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:500,600,700,800,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <!-- <link rel="icon" href="images/favicon.ico"> -->
+  <script src="https://kit.fontawesome.com/0affdc5742.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
   <form class="bar">
-    <input class="form-control search-bar" type="text" placeholder="Search from store" aria-label="Search" style="height : 55px;">
+    <input class="form-control search-bar" type="text" placeholder="Search from store" aria-label="Search" style="height : 55px; width:80%;">
   </form>
 
   <div class="main">
 
     <div class="banner">
-      <a href="#" id="search_btn"><i class="fas fa-search"></i></a>
-      <a href="#" id="cart_btn"><i class="fas fa-shopping-cart"></i></a>
-      <img src="images/banner.jpg" alt="" class="banner-img">
+      <a href="#" id="search_btn"><i class="fas fa-search custom-icon" style="right:5rem;"></i></a>
+      <a href="#" id="cart_btn"><i class="fas fa-shopping-cart custom-icon" style="right:2rem;"></i></a>
+      <img src="images/banner.jpg" alt="" class="banner-img" width="100%">
     </div>
 
-    <div class="menu row" style="margin: 30px;">
+    <!-- NAVBAR -->
+    <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand">
+        <img src="images/favicon.ico" alt="Website Name" width="40" height="40" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav nav">
+          <li class="nav-item active">
+            <a class="nav-link home">HOME<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link deals">DEALS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link apparel">APPAREL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link home-textile">HOME TEXTILE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link about">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link contact">CONTACT US</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <div class="hovereffect">
-          <img class="img-responsive" src="images/sample.png" alt="">
-          <div class="overlay">
-            <h2>Price Tag</h2>
-            <a class="info" href="#"> <h5>See more</h5> </a>
+    <section id="apparel">
+      <div class="menu row" style="margin: 30px;">
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="hovereffect">
+            <img class="img-responsive" src="images/sample.png" alt="">
+            <div class="overlay">
+              <h2>Price Tag</h2>
+              <a class="info" href="#"> <h5>See more</h5> </a>
+            </div>
           </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="hovereffect">
+            <img class="img-responsive" src="images/sample.png" alt="">
+            <div class="overlay">
+              <h2>Price Tag</h2>
+              <a class="info" href="#"> <h5>See more</h5> </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="hovereffect">
+            <img class="img-responsive" src="images/sample.png" alt="">
+            <div class="overlay">
+              <h2>Price Tag</h2>
+              <a class="info" href="#"> <h5>See more</h5> </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="hovereffect">
+            <img class="img-responsive" src="images/sample.png" alt="">
+            <div class="overlay">
+              <h2>Price Tag</h2>
+              <a class="info" href="#"> <h5>See more</h5> </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="hovereffect">
+            <img class="img-responsive" src="images/sample.png" alt="">
+            <div class="overlay">
+              <h2>Price Tag</h2>
+              <a class="info" href="#"> <h5>See more</h5> </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="hovereffect">
+            <img class="img-responsive" src="images/sample.png" alt="">
+            <div class="overlay">
+              <h2>Price Tag</h2>
+              <a class="info" href="#"> <h5>See more</h5> </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SVG -->
+    <svg id="svg1" preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+      <path d="M0 0 L50 100 L100 0 Z" fill="#DDDEE0" stroke="white"></path>
+    </svg>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h1 class="title">ABOUT US</h1>
+      <div class="title-bar"></div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-12 about-col">
+          <span class="para-2">VISION STATEMENT</span>
+          <span class="para-3">To become an iconic trendsetting and ever-evolving high-street fashion brand for the young generation by contemporizing tradition with the latest trends and turning it into an urban lifestyle, (Website Name) aims to
+            highlight the prevalent issues in society and cater to them using the social element of the brand.</span>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 about-col">
+          <span class="para-2">MISSION STATEMENT</span>
+          <span class="para-3">We strive to enable Millennials, Gen-z and all the generations to come to beware of, and to defy and tackle, stigmas and stereotypes that have been deeply embedded into our society. Whether it's style and fashion, daily
+            life or career development, everything that we do is to inspire and empower our youth via forward-thinking fashion.</span>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 about-col">
+          <span class="para-2">ARTISTIC</span>
+          <span class="para-3">As a design house, the product cycle originates from an artistic thought process and ensures that the aesthetic requirements are maintained. We are constantly adapting and setting cultural trends. We believe in selling
+            quality not the product because What you wear is a statement, a label and a coat of armor.</span>
         </div>
       </div>
 
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <div class="hovereffect">
-          <img class="img-responsive" src="images/sample.png" alt="">
-          <div class="overlay">
-            <h2>Price Tag</h2>
-            <a class="info" href="#"> <h5>See more</h5> </a>
-          </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-12 about-col">
+          <span class="para-2">CONFIDENT</span>
+          <span class="para-3">Our personality will be attentive and aspirational. We always demonstrate our knowledge of what our customers need and what they will require in the future.</span>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 about-col">
+          <span class="para-2">GAINING TRUST</span>
+          <span class="para-3">Dedicated to satisfying customers’ needs and demands by providing unique designs and offering high quality to build an army of loyal customers.</span>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 about-col">
+          <span class="para-2">EVER-EVOLVING</span>
+          <span class="para-3">We are here to stay for a very long time and that motivates us to continuously evolve in accordance with the demands and behavior of the consumers.</span>
         </div>
       </div>
 
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <div class="hovereffect">
-          <img class="img-responsive" src="images/sample.png" alt="">
-          <div class="overlay">
-            <h2>Price Tag</h2>
-            <a class="info" href="#"> <h5>See more</h5> </a>
+    </section>
+
+
+    <!-- SVG -->
+    <svg id="svg2" preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+      <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
+    </svg>
+
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h1 class="title">CONTACT</h1>
+      <div class="title-bar"></div>
+      <div class="form-div">
+        <h4 class="question-text">Have a question or want to order something?</h4>
+
+        <form action="mailto:email" method="post" enctype="text/plain">
+          <input id="name" name="From: " type="text" placeholder="Your name" class="form-control">
+          <input id="email" name="Email: " type="text" placeholder="Your email" class="form-control">
+          <textarea class="form-control" id="message" name="Message: " placeholder="Please enter your message here..." rows="5"></textarea>
+          <input type="submit" class="btn btn-lg btn-outline-info submit-button" value="Submit">
+        </form>
+
+      </div>
+      <div class="top-taker-button bottom">
+        <i class="fas fa-angle-double-up"></i>
+      </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="social-section">
+        <div class="row">
+          <div class="col-12" style="text-align: center;">
+            <a href="#" target="_blank"><i class="social-icon fab fa-whatsapp"></i></a>
+            <a href="#" target="_blank"><i class="social-icon fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="social-icon fab fa-instagram"></i></a>
           </div>
         </div>
-      </div>
-
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <div class="hovereffect">
-          <img class="img-responsive" src="images/sample.png" alt="">
-          <div class="overlay">
-            <h2>Price Tag</h2>
-            <a class="info" href="#"> <h5>See more</h5> </a>
-          </div>
+        <div class="copyright-line">
+          <a class="copyright-line" href="#">WEBSITE NAME</a>
+          <span class="Copyright">©2020</span>
         </div>
       </div>
-
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <div class="hovereffect">
-          <img class="img-responsive" src="images/sample.png" alt="">
-          <div class="overlay">
-            <h2>Price Tag</h2>
-            <a class="info" href="#"> <h5>See more</h5> </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <div class="hovereffect">
-          <img class="img-responsive" src="images/sample.png" alt="">
-          <div class="overlay">
-            <h2>Price Tag</h2>
-            <a class="info" href="#"> <h5>See more</h5> </a>
-          </div>
-        </div>
-      </div>
-
-    </div>
+    </footer>
 
 
   </div>
-  <script src="index.js" charset="utf-8"></script>
+
+
+
+
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" charset="utf-8"></script>
+<script src="index.js" charset="utf-8"></script>
 
 </html>
