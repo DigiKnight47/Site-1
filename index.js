@@ -3,6 +3,21 @@ $("a.home").click(function() {
   return false;
 });
 
+$("a.gents").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
+
+$("a.ladies").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
+
+$("a.home-textile").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
+
 $("a.about").click(function() {
     $('html,body').animate({
         scrollTop: $("#about").offset().top},
